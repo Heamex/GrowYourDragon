@@ -58,16 +58,24 @@
 		DE559BA3297C31E4003CF58F /* GrowYourDragon */ = {
 			isa = PBXGroup;
 			children = (
+				DE7BA1FC29806636000BC8FE /* Storyboards */,
 				DE559BA4297C31E4003CF58F /* AppDelegate.swift */,
 				DE559BA6297C31E4003CF58F /* SceneDelegate.swift */,
 				DE559BA8297C31E4003CF58F /* ViewController.swift */,
-				DE559BAA297C31E4003CF58F /* Main.storyboard */,
 				DE559BB0297C31E5003CF58F /* Assets.xcassets */,
-				DE559BB2297C31E5003CF58F /* LaunchScreen.storyboard */,
 				DE559BB5297C31E5003CF58F /* Info.plist */,
 				DE559BAD297C31E4003CF58F /* GrowYourDragon.xcdatamodeld */,
 			);
 			path = GrowYourDragon;
+			sourceTree = "<group>";
+		};
+		DE7BA1FC29806636000BC8FE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DE559BAA297C31E4003CF58F /* Main.storyboard */,
+				DE559BB2297C31E5003CF58F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
