@@ -31,8 +31,38 @@
                     <view key="view" contentMode="scaleToFill" id="CXg-xY-1vt" userLabel="HabbitTrackerViewController">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="TC4-dM-WTO">
+                                <rect key="frame" x="16" y="69" width="356" height="42.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выполнено 2/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smK-7l-xh2">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="42.666666666666664"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-kr-cEs">
+                                        <rect key="frame" x="286" y="0.0" width="70" height="42.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-GO-8Us">
+                                <rect key="frame" x="0.0" y="139" width="393" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Bqa-m0-gSq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TC4-dM-WTO" firstAttribute="leading" secondItem="Bqa-m0-gSq" secondAttribute="leading" constant="16" id="IOU-Lv-YcI"/>
+                            <constraint firstItem="TC4-dM-WTO" firstAttribute="top" secondItem="Bqa-m0-gSq" secondAttribute="top" constant="10" id="Re5-gT-ig9"/>
+                            <constraint firstItem="Bqa-m0-gSq" firstAttribute="trailing" secondItem="TC4-dM-WTO" secondAttribute="trailing" constant="21" id="k6F-i0-LUC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tasks" image="list.bullet" catalog="system" selectedImage="list.bullet" id="6yw-BV-taA"/>
                 </viewController>
