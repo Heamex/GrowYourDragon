@@ -8,49 +8,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Dragon-->
         <scene sceneID="zTU-a3-3wA">
             <objects>
                 <viewController id="UGg-lP-DV9" customClass="DragonViewController" customModule="GrowYourDragon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XBf-3h-Vd0">
+                    <view key="view" contentMode="scaleToFill" id="XBf-3h-Vd0" userLabel="DragonViewController">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="fdW-t1-4bw"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PbS-Bb-SfQ"/>
+                    <tabBarItem key="tabBarItem" title="Dragon" image="d.square" catalog="system" selectedImage="d.square" id="PbS-Bb-SfQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYB-8F-QL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1069.4656488549617" y="-790.14084507042253"/>
         </scene>
-        <!--Item-->
+        <!--Tasks-->
         <scene sceneID="j1j-z5-5eR">
             <objects>
                 <viewController id="w0f-I4-Nz9" customClass="HabbitTrackerViewController" customModule="GrowYourDragon" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CXg-xY-1vt">
+                    <view key="view" contentMode="scaleToFill" id="CXg-xY-1vt" userLabel="HabbitTrackerViewController">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Bqa-m0-gSq"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="6yw-BV-taA"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="list.bullet" catalog="system" selectedImage="list.bullet" id="6yw-BV-taA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0B-S2-1gv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1069.4656488549617" y="-133.09859154929578"/>
         </scene>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="LY6-OU-RSH">
             <objects>
                 <viewController id="nA9-LO-SaV" customClass="SettingsViewController" customModule="GrowYourDragon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jlZ-d1-xh7">
+                    <view key="view" contentMode="scaleToFill" id="jlZ-d1-xh7" userLabel="SettingsViewController">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8tW-ZH-H7N"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="9fd-2F-CDf"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="slider.horizontal.3" catalog="system" selectedImage="slider.horizontal.3" id="9fd-2F-CDf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17Q-lo-iwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,14 +77,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="d.square" catalog="system" width="128" height="114"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
