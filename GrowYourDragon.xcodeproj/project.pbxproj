@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		DE559BA5297C31E4003CF58F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA4297C31E4003CF58F /* AppDelegate.swift */; };
 		DE559BA7297C31E4003CF58F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA6297C31E4003CF58F /* SceneDelegate.swift */; };
-		DE559BA9297C31E4003CF58F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA8297C31E4003CF58F /* ViewController.swift */; };
+		DE559BA9297C31E4003CF58F /* HabbitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA8297C31E4003CF58F /* HabbitTrackerViewController.swift */; };
 		DE559BAC297C31E4003CF58F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE559BAA297C31E4003CF58F /* Main.storyboard */; };
 		DE559BAF297C31E4003CF58F /* GrowYourDragon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE559BAD297C31E4003CF58F /* GrowYourDragon.xcdatamodeld */; };
 		DE559BB1297C31E5003CF58F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE559BB0297C31E5003CF58F /* Assets.xcassets */; };
 		DE559BB4297C31E5003CF58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE559BB2297C31E5003CF58F /* LaunchScreen.storyboard */; };
+		DE7964162986D93700AA6ED8 /* DragonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7964152986D93700AA6ED8 /* DragonViewController.swift */; };
+		DE7964182986D96600AA6ED8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7964172986D96600AA6ED8 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DE559BA1297C31E4003CF58F /* GrowYourDragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowYourDragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE559BA4297C31E4003CF58F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE559BA6297C31E4003CF58F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE559BA8297C31E4003CF58F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE559BA8297C31E4003CF58F /* HabbitTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabbitTrackerViewController.swift; sourceTree = "<group>"; };
 		DE559BAB297C31E4003CF58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE559BAE297C31E4003CF58F /* GrowYourDragon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GrowYourDragon.xcdatamodel; sourceTree = "<group>"; };
 		DE559BB0297C31E5003CF58F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE559BB3297C31E5003CF58F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE559BB5297C31E5003CF58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7964152986D93700AA6ED8 /* DragonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonViewController.swift; sourceTree = "<group>"; };
+		DE7964172986D96600AA6ED8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,10 @@
 		DE559B98297C31E4003CF58F = {
 			isa = PBXGroup;
 			children = (
+				DE7964142986D8B300AA6ED8 /* Views */,
+				DE7BA1FC29806636000BC8FE /* Storyboards */,
+				DE7964192986DC5000AA6ED8 /* Models */,
+				DE79641A2986DC6E00AA6ED8 /* Helpers */,
 				DE559BA3297C31E4003CF58F /* GrowYourDragon */,
 				DE559BA2297C31E4003CF58F /* Products */,
 			);
@@ -58,15 +66,37 @@
 		DE559BA3297C31E4003CF58F /* GrowYourDragon */ = {
 			isa = PBXGroup;
 			children = (
-				DE7BA1FC29806636000BC8FE /* Storyboards */,
 				DE559BA4297C31E4003CF58F /* AppDelegate.swift */,
 				DE559BA6297C31E4003CF58F /* SceneDelegate.swift */,
-				DE559BA8297C31E4003CF58F /* ViewController.swift */,
 				DE559BB0297C31E5003CF58F /* Assets.xcassets */,
 				DE559BB5297C31E5003CF58F /* Info.plist */,
 				DE559BAD297C31E4003CF58F /* GrowYourDragon.xcdatamodeld */,
 			);
 			path = GrowYourDragon;
+			sourceTree = "<group>";
+		};
+		DE7964142986D8B300AA6ED8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE559BA8297C31E4003CF58F /* HabbitTrackerViewController.swift */,
+				DE7964152986D93700AA6ED8 /* DragonViewController.swift */,
+				DE7964172986D96600AA6ED8 /* SettingsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE7964192986DC5000AA6ED8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE79641A2986DC6E00AA6ED8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		DE7BA1FC29806636000BC8FE /* Storyboards */ = {
@@ -150,9 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE559BAF297C31E4003CF58F /* GrowYourDragon.xcdatamodeld in Sources */,
-				DE559BA9297C31E4003CF58F /* ViewController.swift in Sources */,
+				DE559BA9297C31E4003CF58F /* HabbitTrackerViewController.swift in Sources */,
 				DE559BA5297C31E4003CF58F /* AppDelegate.swift in Sources */,
 				DE559BA7297C31E4003CF58F /* SceneDelegate.swift in Sources */,
+				DE7964162986D93700AA6ED8 /* DragonViewController.swift in Sources */,
+				DE7964182986D96600AA6ED8 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

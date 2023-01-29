@@ -7,14 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HabbitTrackerViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
-		print("Hello team!")
+		print("Habbit Tracker here!")
 	}
-
-
+	
 }
 
