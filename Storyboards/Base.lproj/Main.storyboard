@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mAb-Lt-niT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dragon-->
+        <scene sceneID="zTU-a3-3wA">
+            <objects>
+                <viewController id="UGg-lP-DV9" customClass="DragonViewController" customModule="GrowYourDragon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBf-3h-Vd0" userLabel="DragonViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fdW-t1-4bw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dragon" image="d.square" catalog="system" selectedImage="d.square" id="PbS-Bb-SfQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYB-8F-QL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.4656488549617" y="-790.14084507042253"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="j1j-z5-5eR">
+            <objects>
+                <viewController id="w0f-I4-Nz9" customClass="HabbitTrackerViewController" customModule="GrowYourDragon" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CXg-xY-1vt" userLabel="HabbitTrackerViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="TC4-dM-WTO">
+                                <rect key="frame" x="16" y="69" width="356" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выполнено 2/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smK-7l-xh2" userLabel="TasksCounter">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="45"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-kr-cEs">
+                                        <rect key="frame" x="286" y="0.0" width="70" height="45"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Ajq-1O-txe"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-GO-8Us" userLabel="Tasks Table View">
+                                <rect key="frame" x="16" y="114" width="356" height="655"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bqa-m0-gSq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I9J-GO-8Us" firstAttribute="leading" secondItem="TC4-dM-WTO" secondAttribute="leading" id="BXo-2s-vg4"/>
+                            <constraint firstItem="I9J-GO-8Us" firstAttribute="trailing" secondItem="TC4-dM-WTO" secondAttribute="trailing" id="FFD-j2-yDx"/>
+                            <constraint firstItem="TC4-dM-WTO" firstAttribute="top" secondItem="Bqa-m0-gSq" secondAttribute="top" constant="10" id="Fqf-Xf-HzY"/>
+                            <constraint firstItem="TC4-dM-WTO" firstAttribute="leading" secondItem="Bqa-m0-gSq" secondAttribute="leading" constant="16" id="IOU-Lv-YcI"/>
+                            <constraint firstItem="I9J-GO-8Us" firstAttribute="top" secondItem="TC4-dM-WTO" secondAttribute="bottom" id="N7Q-9R-lNs"/>
+                            <constraint firstItem="TC4-dM-WTO" firstAttribute="top" secondItem="I9J-GO-8Us" secondAttribute="bottom" constant="-700" id="Re5-gT-ig9"/>
+                            <constraint firstItem="Bqa-m0-gSq" firstAttribute="trailing" secondItem="TC4-dM-WTO" secondAttribute="trailing" constant="21" id="k6F-i0-LUC"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="list.bullet" catalog="system" selectedImage="list.bullet" id="6yw-BV-taA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0B-S2-1gv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069.4656488549617" y="-133.09859154929578"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="LY6-OU-RSH">
+            <objects>
+                <viewController id="nA9-LO-SaV" customClass="SettingsViewController" customModule="GrowYourDragon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jlZ-d1-xh7" userLabel="SettingsViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8tW-ZH-H7N"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="slider.horizontal.3" catalog="system" selectedImage="slider.horizontal.3" id="9fd-2F-CDf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17Q-lo-iwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1069" y="599"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="FwS-we-cvK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mAb-Lt-niT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yyT-Fx-ado">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="UGg-lP-DV9" kind="relationship" relationship="viewControllers" id="Ff9-dl-yAE"/>
+                        <segue destination="w0f-I4-Nz9" kind="relationship" relationship="viewControllers" id="Ip6-aQ-EFW"/>
+                        <segue destination="nA9-LO-SaV" kind="relationship" relationship="viewControllers" id="btj-ib-1a7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Np6-ZI-dxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142.74809160305344" y="-129.57746478873241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="d.square" catalog="system" width="128" height="114"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
