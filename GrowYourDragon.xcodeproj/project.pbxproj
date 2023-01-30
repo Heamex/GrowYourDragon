@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2B26E8298832AC006C23B2 /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2B26E7298832AC006C23B2 /* HabitTableViewCell.swift */; };
 		3D76BDB829870FB3004F77BB /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D76BDB729870FB3004F77BB /* HabitDetailViewController.swift */; };
 		DE559BA5297C31E4003CF58F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA4297C31E4003CF58F /* AppDelegate.swift */; };
 		DE559BA7297C31E4003CF58F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA6297C31E4003CF58F /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D2B26E7298832AC006C23B2 /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		3D76BDB729870FB3004F77BB /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
 		DE559BA1297C31E4003CF58F /* GrowYourDragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowYourDragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE559BA4297C31E4003CF58F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		DE7964142986D8B300AA6ED8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D2B26E7298832AC006C23B2 /* HabitTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				DE559BA7297C31E4003CF58F /* SceneDelegate.swift in Sources */,
 				DE7964162986D93700AA6ED8 /* DragonViewController.swift in Sources */,
 				DE7964182986D96600AA6ED8 /* SettingsViewController.swift in Sources */,
+				3D2B26E8298832AC006C23B2 /* HabitTableViewCell.swift in Sources */,
 				3D76BDB829870FB3004F77BB /* HabitDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

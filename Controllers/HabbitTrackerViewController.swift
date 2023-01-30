@@ -8,12 +8,28 @@
 import UIKit
 
 class HabbitTrackerViewController: UIViewController {
+    // MARK: - Outlets
 
+    // MARK: - Private Properties
+    let toHabitDetailViewSegue = "toHabitDetailViewSegue"
+
+    // MARK: - LifeCycle Methods
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
 		print("Habbit Tracker here!")
 	}
-	
+
+    // MARK: - Actions
+    @IBAction func addNewHabitButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: toHabitDetailViewSegue, sender: nil)
+    }
+
+    // MARK: - Segue Actions
+    @IBSegueAction func toHabitDetailViewSegue(_ coder: NSCoder, sender: Any?, segueIdentifier: String?) -> HabitDetailViewController? {
+        guard segueIdentifier == toHabitDetailViewSegue else {
+            return nil
+        }
+        return HabitDetailViewController(coder: coder, name: "New Habit")
+    }
 }
 
