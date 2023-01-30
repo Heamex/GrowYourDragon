@@ -33,6 +33,7 @@ final class HabitDetailViewController: UIViewController {
         dismiss(animated: true)
     }
     @IBAction private func saveButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
     }
 }
 
