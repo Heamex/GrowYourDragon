@@ -14,13 +14,21 @@ final class HabitDetailViewController: UIViewController {
     @IBOutlet weak private var scrollViewBottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
     
     // MARK: - Private variables
     private var scrollViewBottomConstraintConstant: CGFloat?
     private var keyboardIsActive: Bool = false
+
+    // MARK: - Initializers
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    init?(coder: NSCoder, name: String) {
+        super.init(coder: coder)
+    }
 
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
