@@ -59,6 +59,45 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-GO-8Us" userLabel="Tasks Table View">
                                 <rect key="frame" x="16" y="146" width="338" height="655"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="mFx-Oe-8G2" customClass="HabitTableViewCell" customModule="GrowYourDragon" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="338" height="79"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFx-Oe-8G2" id="81G-yl-oFy">
+                                            <rect key="frame" x="0.0" y="0.0" width="338" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mfj-1x-7m3">
+                                                    <rect key="frame" x="20" y="11" width="298" height="57"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2il-mp-Usf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="57"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUL-y3-BBT">
+                                                            <rect key="frame" x="57.666666666666671" y="0.0" width="184.66666666666663" height="57"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-fo-ziI">
+                                                            <rect key="frame" x="250.33333333333329" y="0.0" width="47.666666666666657" height="57"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mfj-1x-7m3" secondAttribute="bottom" id="9cD-qk-SP8"/>
+                                                <constraint firstItem="mfj-1x-7m3" firstAttribute="top" secondItem="81G-yl-oFy" secondAttribute="topMargin" id="Ni2-ox-7Z2"/>
+                                                <constraint firstItem="mfj-1x-7m3" firstAttribute="leading" secondItem="81G-yl-oFy" secondAttribute="leadingMargin" id="dCQ-Gl-wLT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mfj-1x-7m3" secondAttribute="trailing" id="w88-Fn-4vh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bqa-m0-gSq"/>
@@ -80,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L0B-S2-1gv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1996.1832061068701" y="-133.09859154929578"/>
+            <point key="canvasLocation" x="1996" y="-133.74384236453201"/>
         </scene>
         <!--Habit Detail View Controller-->
         <scene sceneID="cqZ-ol-EA1">
@@ -241,7 +280,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle" catalog="system" width="128" height="123"/>
         <image name="d.square" catalog="system" width="128" height="114"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="list.bullet" catalog="system" width="128" height="87"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <systemColor name="systemBackgroundColor">
