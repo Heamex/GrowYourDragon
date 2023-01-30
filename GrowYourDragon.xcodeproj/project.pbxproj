@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D76BDB829870FB3004F77BB /* HabitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D76BDB729870FB3004F77BB /* HabitDetailViewController.swift */; };
 		DE559BA5297C31E4003CF58F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA4297C31E4003CF58F /* AppDelegate.swift */; };
 		DE559BA7297C31E4003CF58F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA6297C31E4003CF58F /* SceneDelegate.swift */; };
 		DE559BA9297C31E4003CF58F /* HabbitTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE559BA8297C31E4003CF58F /* HabbitTrackerViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D76BDB729870FB3004F77BB /* HabitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitDetailViewController.swift; sourceTree = "<group>"; };
 		DE559BA1297C31E4003CF58F /* GrowYourDragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrowYourDragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE559BA4297C31E4003CF58F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE559BA6297C31E4003CF58F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,12 +45,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DEA2C94298701AF001BB8AF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE559BA8297C31E4003CF58F /* HabbitTrackerViewController.swift */,
+				DE7964152986D93700AA6ED8 /* DragonViewController.swift */,
+				DE7964172986D96600AA6ED8 /* SettingsViewController.swift */,
+				3D76BDB729870FB3004F77BB /* HabitDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		DE559B98297C31E4003CF58F = {
 			isa = PBXGroup;
 			children = (
+				3DEA2C94298701AF001BB8AF /* Controllers */,
+				DE7964192986DC5000AA6ED8 /* Models */,
 				DE7964142986D8B300AA6ED8 /* Views */,
 				DE7BA1FC29806636000BC8FE /* Storyboards */,
-				DE7964192986DC5000AA6ED8 /* Models */,
 				DE79641A2986DC6E00AA6ED8 /* Helpers */,
 				DE559BA3297C31E4003CF58F /* GrowYourDragon */,
 				DE559BA2297C31E4003CF58F /* Products */,
@@ -78,9 +92,6 @@
 		DE7964142986D8B300AA6ED8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DE559BA8297C31E4003CF58F /* HabbitTrackerViewController.swift */,
-				DE7964152986D93700AA6ED8 /* DragonViewController.swift */,
-				DE7964172986D96600AA6ED8 /* SettingsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +196,7 @@
 				DE559BA7297C31E4003CF58F /* SceneDelegate.swift in Sources */,
 				DE7964162986D93700AA6ED8 /* DragonViewController.swift in Sources */,
 				DE7964182986D96600AA6ED8 /* SettingsViewController.swift in Sources */,
+				3D76BDB829870FB3004F77BB /* HabitDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +343,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9QX6677CZ8;
+				DEVELOPMENT_TEAM = WEZ4D5M6R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GrowYourDragon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -362,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9QX6677CZ8;
+				DEVELOPMENT_TEAM = WEZ4D5M6R9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GrowYourDragon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
