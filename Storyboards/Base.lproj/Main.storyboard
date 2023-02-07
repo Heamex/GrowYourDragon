@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mAb-Lt-niT">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mAb-Lt-niT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +14,7 @@
             <objects>
                 <viewController id="UGg-lP-DV9" customClass="DragonViewController" customModule="GrowYourDragon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XBf-3h-Vd0" userLabel="DragonViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="fdW-t1-4bw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,11 +30,11 @@
             <objects>
                 <viewController id="w0f-I4-Nz9" customClass="HabbitTrackerViewController" customModule="GrowYourDragon" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CXg-xY-1vt" userLabel="HabbitTrackerViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="TC4-dM-WTO">
-                                <rect key="frame" x="16" y="101" width="338" height="45"/>
+                                <rect key="frame" x="16" y="102" width="377" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выполнено 2/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smK-7l-xh2" userLabel="TasksCounter">
                                         <rect key="frame" x="0.0" y="0.0" width="179" height="45"/>
@@ -42,7 +43,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qb4-kr-cEs">
-                                        <rect key="frame" x="268" y="0.0" width="70" height="45"/>
+                                        <rect key="frame" x="307" y="0.0" width="70" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Add">
                                             <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
@@ -57,32 +58,32 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I9J-GO-8Us" userLabel="Tasks Table View">
-                                <rect key="frame" x="16" y="146" width="338" height="655"/>
+                                <rect key="frame" x="16" y="147" width="377" height="655"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="79" id="mFx-Oe-8G2" customClass="HabitTableViewCell" customModule="GrowYourDragon" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="338" height="79"/>
+                                        <rect key="frame" x="0.0" y="50" width="377" height="79"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mFx-Oe-8G2" id="81G-yl-oFy">
-                                            <rect key="frame" x="0.0" y="0.0" width="338" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="377" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mfj-1x-7m3">
-                                                    <rect key="frame" x="20" y="11" width="298" height="57"/>
+                                                    <rect key="frame" x="20" y="11" width="337" height="57"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2il-mp-Usf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="57"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="57"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system"/>
                                                         </button>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUL-y3-BBT">
-                                                            <rect key="frame" x="57.666666666666671" y="0.0" width="184.66666666666663" height="57"/>
+                                                            <rect key="frame" x="58" y="0.0" width="223" height="57"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuT-fo-ziI">
-                                                            <rect key="frame" x="250.33333333333329" y="0.0" width="47.666666666666657" height="57"/>
+                                                            <rect key="frame" x="289" y="0.0" width="48" height="57"/>
                                                             <state key="normal" title="Button"/>
                                                             <buttonConfiguration key="configuration" style="plain" image="ellipsis" catalog="system"/>
                                                         </button>
@@ -114,6 +115,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="c3Z-rK-F9L"/>
                     <connections>
+                        <outlet property="addButton" destination="qb4-kr-cEs" id="fYP-Bu-wLO"/>
+                        <outlet property="completionLabel" destination="smK-7l-xh2" id="QQj-MR-ijb"/>
+                        <outlet property="tasksTableView" destination="I9J-GO-8Us" id="Enn-lD-BMn"/>
                         <segue destination="5u1-x4-wEs" kind="presentation" identifier="toHabitDetailViewSegue" destinationCreationSelector="toHabitDetailViewSegue:sender:segueIdentifier:" id="2sK-LH-7js"/>
                     </connections>
                 </viewController>
@@ -126,11 +130,11 @@
             <objects>
                 <viewController id="5u1-x4-wEs" customClass="HabitDetailViewController" customModule="GrowYourDragon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pFd-yA-4TT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-01-QDs">
-                                <rect key="frame" x="4" y="63" width="367" height="35"/>
+                                <rect key="frame" x="4" y="64" width="406" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIL-5X-SQs">
                                         <rect key="frame" x="0.0" y="0.0" width="103" height="35"/>
@@ -141,7 +145,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6o-H1-Y8y">
-                                        <rect key="frame" x="257.66666666666669" y="0.0" width="109.33333333333331" height="35"/>
+                                        <rect key="frame" x="296.5" y="0.0" width="109.5" height="35"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Сохранить"/>
                                         <connections>
@@ -154,21 +158,21 @@
                                 </constraints>
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="1Je-Pu-JVk">
-                                <rect key="frame" x="16" y="106" width="343" height="615"/>
+                                <rect key="frame" x="16" y="107" width="382" height="697"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lde-5x-WCq">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="150"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2r1-GJ-wHs">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="150"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Название" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDC-U0-OV6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Описание" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mva-OC-VhX">
-                                                        <rect key="frame" x="0.0" y="50" width="343" height="100"/>
+                                                        <rect key="frame" x="0.0" y="50" width="382" height="100"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="100" id="0JG-Ic-rkO"/>
                                                         </constraints>
@@ -228,7 +232,7 @@
             <objects>
                 <viewController id="nA9-LO-SaV" customClass="SettingsViewController" customModule="GrowYourDragon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jlZ-d1-xh7" userLabel="SettingsViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8tW-ZH-H7N"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -266,7 +270,7 @@
                     <tabBarItem key="tabBarItem" title="Tasks" image="list.bullet" catalog="system" selectedImage="list.bullet" id="6yw-BV-taA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6E2-La-hZw">
-                        <rect key="frame" x="0.0" y="47" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

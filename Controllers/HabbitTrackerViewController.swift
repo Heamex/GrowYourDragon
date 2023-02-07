@@ -9,7 +9,10 @@ import UIKit
 
 class HabbitTrackerViewController: UIViewController {
     // MARK: - Outlets
-
+    @IBOutlet weak var completionLabel: UILabel!
+    
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var tasksTableView: UITableView!
     // MARK: - Private Properties
     let toHabitDetailViewSegue = "toHabitDetailViewSegue"
 
@@ -31,5 +34,6 @@ class HabbitTrackerViewController: UIViewController {
         }
         return HabitDetailViewController(coder: coder, name: "New Habit")
     }
+
 }
 
