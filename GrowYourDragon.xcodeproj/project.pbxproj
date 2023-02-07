@@ -18,6 +18,7 @@
 		DE559BB4297C31E5003CF58F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE559BB2297C31E5003CF58F /* LaunchScreen.storyboard */; };
 		DE7964162986D93700AA6ED8 /* DragonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7964152986D93700AA6ED8 /* DragonViewController.swift */; };
 		DE7964182986D96600AA6ED8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7964172986D96600AA6ED8 /* SettingsViewController.swift */; };
+		E1C58B3E298EE11600F9B546 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C58B3D298EE11600F9B546 /* Habit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DE559BB5297C31E5003CF58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE7964152986D93700AA6ED8 /* DragonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonViewController.swift; sourceTree = "<group>"; };
 		DE7964172986D96600AA6ED8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E1C58B3D298EE11600F9B546 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3DEA2C94298701AF001BB8AF /* Controllers */,
-				DE7964192986DC5000AA6ED8 /* Models */,
+				E1C58B3C298EE0F300F9B546 /* Models */,
 				DE7964142986D8B300AA6ED8 /* Views */,
 				DE7BA1FC29806636000BC8FE /* Storyboards */,
 				DE79641A2986DC6E00AA6ED8 /* Helpers */,
@@ -99,13 +101,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		DE7964192986DC5000AA6ED8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		DE79641A2986DC6E00AA6ED8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +115,14 @@
 				DE559BB2297C31E5003CF58F /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E1C58B3C298EE0F300F9B546 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1C58B3D298EE11600F9B546 /* Habit.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +202,7 @@
 				DE559BA7297C31E4003CF58F /* SceneDelegate.swift in Sources */,
 				DE7964162986D93700AA6ED8 /* DragonViewController.swift in Sources */,
 				DE7964182986D96600AA6ED8 /* SettingsViewController.swift in Sources */,
+				E1C58B3E298EE11600F9B546 /* Habit.swift in Sources */,
 				3D2B26E8298832AC006C23B2 /* HabitTableViewCell.swift in Sources */,
 				3D76BDB829870FB3004F77BB /* HabitDetailViewController.swift in Sources */,
 			);
@@ -347,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WEZ4D5M6R9;
+				DEVELOPMENT_TEAM = HCJSH6JU78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GrowYourDragon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -355,12 +359,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Heamex-DRIM.GrowYourDragon";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heamex-DRIM.GrowYourDragon1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -378,7 +383,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WEZ4D5M6R9;
+				DEVELOPMENT_TEAM = HCJSH6JU78;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GrowYourDragon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -386,12 +391,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Heamex-DRIM.GrowYourDragon";
+				PRODUCT_BUNDLE_IDENTIFIER = "Heamex-DRIM.GrowYourDragon1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
